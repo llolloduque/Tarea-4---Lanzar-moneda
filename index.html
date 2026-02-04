@@ -2,22 +2,27 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Lanzar moneda</title>
+    <title>Lanzar Moneda</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h1>Lanzar moneda</h1>
+    <h1>Juego: Lanzar la moneda</h1>
 
-    <p id="texto">Elige cara o cruz</p>
+    <p id="texto">Elige cara o cruz y pulsa jugar</p>
 
-    <img id="moneda" src="question-mark.png" width="150">
+    <img id="moneda" src="question-mark.png" alt="Moneda">
 
-    <br><br>
-
-    <input type="radio" name="eleccion" value="cara"> Cara
-    <input type="radio" name="eleccion" value="cruz"> Cruz
-
-    <br><br>
+    <div class="opciones">
+        <label>
+            <input type="radio" name="eleccion" value="cara">
+            Cara
+        </label>
+        <label>
+            <input type="radio" name="eleccion" value="cruz">
+            Cruz
+        </label>
+    </div>
 
     <button id="jugar">Jugar</button>
 
